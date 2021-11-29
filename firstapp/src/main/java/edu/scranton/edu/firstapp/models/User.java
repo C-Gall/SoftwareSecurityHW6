@@ -15,6 +15,31 @@ public class User {
 	@Size(max = 50)
 	private String lastName;
 	
-	@Size(max = 64) //SHA-256 should produce 64 CHAR long string, unsure of if it should be present in the model class.
+	@Size(max = 60) //BCrypt should produce 60 CHAR long string, unsure of if it should be present in the model class.
 	private String password;
+	
+	//Getters and Setters
+	public String getEmail() {
+		return email;
+	}
+	
+	public String getFirstName() {
+		return firstName;
+	}
+	
+	public String getLastName() {
+		return lastName;
+	}
+	
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
+	}
+	
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
 }
