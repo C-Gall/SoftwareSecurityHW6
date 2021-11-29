@@ -1,10 +1,13 @@
-package edu.scranton.edu.firstapp;
+package edu.scranton.edu.firstapp.controllers;
 
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import edu.scranton.edu.firstapp.models.Greeting;
+
+//Currently only a test class to ensure this had worked. Should be removed at later date.
 @RestController
 public class GreetingController {
 

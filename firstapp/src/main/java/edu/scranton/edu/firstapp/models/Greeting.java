@@ -1,5 +1,6 @@
-package edu.scranton.edu.firstapp;
+package edu.scranton.edu.firstapp.models;
 
+//Currently only a test class to ensure this had worked. Should be removed at later date.
 public class Greeting {
 	private final long id;
 	private final String content;
