@@ -1,7 +1,7 @@
 package edu.scranton.edu.firstapp.utilities;
 
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
-
+//test
 //Temporary class for hashing passwords. To be implemented better later.
 public class Hash {
 	public String bCryptHasher(String input) {
