@@ -3,19 +3,14 @@
 CREATE DATABASE message_app;
 
 CREATE TABLE Users (
-	user_id  int          GENERATED ALWAYS AS IDENTITY,
-	username varchar(30)  NOT NULL,
+	user_id  int          PRIMARY KEY,
+	username varchar(30)  NOT NULL UNIQUE,
 	password varchar(60)  NOT NULL,
 	email    varchar(254) NOT NULL
-	PRIMARY KEY(user_id)
 );
 
 CREATE TABLE Messages (
-	message_id bigint      GENERATED ALWAYS AS IDENTITY,
-	username   varchar(30) NOT NULL,
-	message    varchar(MAX),
-	PRIMARY KEY(message_id),
-	CONSTRAINT fk_user
-		FOREIGN KEY (username)
-			REFERENCES Users(username)
+	message_id bigint      PRIMARY KEY,
+	username   varchar(30) REFERENCES Users (username),
+	message    varchar
 );
